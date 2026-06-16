@@ -1,0 +1,15 @@
+try {
+            Scanner sc = new Scanner(file);
+            while (sc.hasNext()) {
+                String ligne = sc.nextLine();
+                String[] mots = ligne.split(" ");
+                if (mots[0].equals("NAME:") || mots[0].equals("NAME")) {
+                    nom = mots[mots.length - 1];
+                } else if (mots[0].equals("COMMENT:") || mots[0].equals("COMMENT")) {
+                    commentaire = mots[mots.length - 1];
+                }
+                cpt++;
+            }
+        } catch () {
+            //erreurs lol
+        }
